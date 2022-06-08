@@ -15,7 +15,7 @@ def f(h):
         return 'В1'
     elif any(f(x) == 'В1' for x in mov(h)):
         return 'П2'
-    elif all(f(x) == 'П2' for x in mov(h)):
+    elif all(f(x) == 'П2' or f(x) == 'П1' for x in mov(h)):
         return 'В2'
 
 for i in range(1, 242):
