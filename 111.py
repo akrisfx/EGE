@@ -21,8 +21,9 @@ def moves(h, mak = 50):
 
 @lru_cache(None)
 def f(h):
-    if h>= 41:
+    if h>= 41 and :
         return 'Srazy'
+        
     elif any(f(m)== 'Srazy' for m in moves(h)):
         return 'П1'
     elif all(f(m)== 'П1' for m in moves(h)):
