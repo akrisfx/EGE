@@ -1,5 +1,5 @@
 
-f = open('D:/Programming/EGE/27.02/27/17-3.txt').readlines()
+f = open('//27.02/27/17-3.txt').readlines()
 col_pair = 0
 min_raz = 1000000
 

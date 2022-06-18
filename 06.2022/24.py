@@ -1,4 +1,4 @@
-f = open('D:/Programming/EGE/06.2022/f/24.txt').readline()
+f = open('//06.2022/f/24.txt').readline()
 i = 0
 cur = 0
 ar = [0 for i in range(26)]

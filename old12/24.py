@@ -1,5 +1,5 @@
 
-file = open('D:/Programming/EGE/old12/files/24.txt').readlines()
+file = open('//old12/files/24.txt').readlines()
 coun = 0
 
 

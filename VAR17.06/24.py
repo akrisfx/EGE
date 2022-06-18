@@ -1,0 +1,6 @@
+f = open('./f/24.txt').readline()
+f = f.split('A')
+f = list(filter(lambda x: len(x) >= 10, f))
+f = list(filter(lambda x: x.count('B') >= 2, f))
+print(f[1:10])
+print(len(f))

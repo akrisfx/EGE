@@ -3,14 +3,13 @@ from functools import lru_cache
 
 def mov(h):
     a, b = h
-    return (a, b + 1), (a, b * 2), (a + 1, b), (a * 2, b)
-
+    return (a + 1, b), (a * 4, b), (a, b + 1), (a, b * 4)
 
 @lru_cache(None)
 def f(h):
-    if sum(h) >= 77:
-        return 'end'
-    elif any(f(x) == 'end' for x in mov(h)):
+    if sum(h) >= 82:
+        return 'END'
+    elif any(f(x) == 'END' for x in mov(h)):
         return 'P1'
     elif all(f(x) == 'P1' for x in mov(h)):
         return 'V1'
@@ -20,10 +19,6 @@ def f(h):
         return 'V2'
 
 
-for i in range(1, 70):
-    h = 7, i
+for i in range(1, 79):
+    h = (4, i)
     print(i, f(h))
-
-# 18
-# 31 34
-# 30

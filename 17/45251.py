@@ -12,7 +12,7 @@ mox = 0
 # print(mi)
 
 for i in range(len(f) - 1):
-    if f[i] % mi == 0 or f[i+ 1] % mi == 0:
+    if f[i] % mi == 0 or f[i + 1] % mi == 0:
         c += 1
         mox = max(mox, f[i] + f[i + 1])
 
