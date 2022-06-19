@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from functools import lru_cache
 
 
-@lru_cache(maxsize=000000)
+@lru_cache(maxsize=5000000)
 def f(n):
     if n == 0:
         return 0
